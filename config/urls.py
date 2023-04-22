@@ -15,7 +15,7 @@ urlpatterns = [
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="rolling",
+        title="content",
         default_version='1.1.1',
         description="rolling-project API doc",
         terms_of_service="https://www.google.com/policies/terms/",
