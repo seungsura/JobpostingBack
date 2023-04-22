@@ -156,7 +156,7 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_ALLOW_ALL = True  #<- 수정필요  
 
-CSRF_TRUSTED_ORIGINS = ['http://addee7a54b3e44c4d8cb171a08d542c7-761114253.ap-northeast-2.elb.amazonaws.com:8080','http://localhost:8080']
+CSRF_TRUSTED_ORIGINS = ['http://www.rapa.ml:8080','http://localhost:8080']
 
 #아래 또한 수정 필요
 CORS_ORIGIN_WHITELIST = (
