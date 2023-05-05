@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: insert-data-job
+spec:
+  template:
+    metadata:
+      labels:
+        app: insert-data-job
+    spec:
+      containers:
+      - name: insert-data
+        image: <도커레지스트리>/<이미지이름>:<태그>
+      imagePullSecrets:
+        - name: ap-northeast-2-ecr-secret
+      restartPolicy: OnFailure
